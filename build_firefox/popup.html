@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style media="screen">
+      html, body {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Quicksand', sans-serif;
+        background: #172a3a;
+        color: white;
+        width: 350px;
+        min-height: 350px;
+        font-size: 15px;
+      }
+
+      #root {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      /* quicksand-regular - latin */
+      @font-face {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Quicksand Regular'), local('Quicksand-Regular'),
+             url('./fonts/quicksand-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+             url('./fonts/quicksand-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+      /* quicksand-700 - latin */
+      @font-face {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Quicksand Bold'), local('Quicksand-Bold'),
+             url('./fonts/quicksand-v6-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+             url('./fonts/quicksand-v6-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+    </style>
+    <title>nBox</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/javascript" src="popup.js"></script>
+  </body>
+</html>
